@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+  background-image: url("plano de fundo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form {
+  width: 400px;
+  margin: auto;
+  padding-top: 200px;
+}
+
+.card {
+  box-shadow: 1px 1px 5px rgba(0, 38, 255, 0.904);
+  background-color: rgb(38, 130, 190);
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0, 183, 255);
+}
+
+.card-top {
+  text-align: center;
+}
+
+.card-group {
+  margin-bottom: 10px;
+  text-align: left;
+  display: flexbox;
+}
+
+.card-group > label {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.card-group > input {
+  border-radius: 5px;
+  width: 96%;
+  height: 25px;
+  padding: 5px;
+}
+
+.card-group > button {
+  background-image: linear-gradient(
+    to right,
+    rgb(97, 146, 253),
+    rgb(24, 20, 236)
+  );
+  width: 100%;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.btn button:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(15, 11, 248),
+    rgb(81, 105, 243)
+  );
+  font-weight: bold;
+}
+
+.imglogin {
+  border-radius: 300px;
+  width: 80px;
+  box-shadow: 10px 10px 5px rgb(65, 45, 238);
+}
+
+.title {
+  color: rgb(2, 0, 139);
+  font-size: 30px;
+  margin: 10px 0;
+}
+.p {
+  color: rgb(255, 255, 255);
+}
+
+.card-group.remember-me {
+  text-align: center; /* Centraliza o link "Esqueci a senha" */
+  margin-top: 10px;
+}
+
+.card-group.remember-me a {
+  color: #ffffff; /* Cor desejada para o texto */
+}
