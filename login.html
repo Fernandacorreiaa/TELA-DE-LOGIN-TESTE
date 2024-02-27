@@ -11,12 +11,12 @@
   <script>
 
     function redirectToPage(event) {
-      console.log ("evento:",event)
+      console.log("evento:", event)
       event.preventDefault();
       window.location.href = "outra-pagina.html"
 
     }
-      
+
 
   </script>
 
@@ -27,41 +27,41 @@
 <body>
   <main class="login">
 
-  
-  <form class="form" id="loginForm" action="outra-pagina.html" method="GET">
-    <div class="card">
-      <div class="card-top">
-        <img class="imglogin" src="imagem 2.png" alt="" />
-        <h2 class="title"><strong>Achadinhos Nanfe</strong></h2>
-        <p class="p"><strong>Loja Oline</strong></p>
-      </div>
-      <div class="card-group">
-        <label><strong>Email</strong></label>
-        <input type="email" id="Email" name="Email" placeholder="Digite seu email" required>
 
-      </div>
-      <div class="card-group">
-        <label><strong>Senha</strong></label>
-        <input type="password" id="senha" name="Senha" placeholder="Digite sua senha"
-          pattern="^(?=.*[0-9])(?=.*[a-zA-Z]).{1,8}$"
-          title="A senha deve conter pelo menos um número e uma letra, e ter no máximo 8 caracteres." required>
-      </div>
-      <div class="card-group">
-        <label> <input type="checkbox" checked />Lembre-me</label>
-      </div>
+    <form class="form" id="loginForm" action="outra-pagina.html" method="GET">
+      <div class="card">
+        <div class="card-top">
+          <img class="imglogin" src="imagem 2.png" alt="" />
+          <h2 class="title"><strong>Achadinhos Nanfe!</strong></h2>
+          <p class="p"><strong>Login...</strong></p>
+        </div>
+        <div class="card-group">
+          <label><strong>Email</strong></label>
+          <input type="email" id="Email" name="Email" placeholder="Digite seu email" required>
 
-      <div class="card-group btn">
-        <button type="submit" id="acessarbtn" onclick="redirectToPage()">ACESSAR</button>
-
-
-        <div class="card-group remember-me">
-
-          <label><a href="Esqueci a senha">Esqueci a senha</a></label> <!-- Link "Esqueci a senha" -->
+        </div>
+        <div class="card-group">
+          <label><strong>Senha</strong></label>
+          <input type="password" id="senha" name="Senha" placeholder="Digite sua senha"
+            pattern="^(?=.*[0-9])(?=.*[a-zA-Z]).{1,8}$"
+            title="A senha deve conter pelo menos um número e uma letra, e ter no máximo 8 caracteres." required>
+        </div>
+        <div class="card-group">
+          <label> <input type="checkbox" checked />Lembre-me</label>
         </div>
 
-      </div>
-  </form>
-</main>
+        <div class="card-group btn">
+          <button type="submit" id="acessarbtn" onclick="redirectToPage()">ACESSAR</button>
+
+
+          <div class="card-group remember-me">
+
+            <label><a href="Esqueci a senha">Esqueci a senha</a></label> <!-- Link "Esqueci a senha" -->
+          </div>
+
+        </div>
+    </form>
+  </main>
 </body>
 
 </html>

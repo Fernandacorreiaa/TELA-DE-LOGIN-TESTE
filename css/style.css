@@ -11,11 +11,12 @@ body {
 }
 
 .card {
-  box-shadow: 1px 1px 5px rgb(248, 167, 167);
-  background-color: rgb(250, 214, 214);
+  box-shadow: 1px 1px 5px rgb(171, 38, 233);
+  background: linear-gradient(135deg, #290275 0%, #f50591 100%);
+  opacity: 65%;
   padding: 40px;
   border-radius: 5px;
-  box-shadow: 0 3px 10px rgb(255, 0, 0);
+  box-shadow: 0 3px 10px rgb(255, 5, 222);
 }
 
 .card-top {
@@ -30,7 +31,7 @@ body {
 
 .card-group > label {
   width: 100%;
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   justify-content: space-between;
   flex-direction: row;
 }
@@ -45,8 +46,8 @@ body {
 .card-group > button {
   background-image: linear-gradient(
     to right,
-    rgb(252, 40, 40),
-    rgb(252, 116, 116)
+    rgb(106, 7, 172),
+    rgb(243, 109, 255)
   );
   width: 100%;
   padding: 10px;
@@ -57,8 +58,8 @@ body {
 .btn button:hover {
   background-image: linear-gradient(
     to right,
-    rgb(247, 149, 149),
-    rgb(252, 20, 20)
+    rgb(208, 137, 226),
+    rgb(100, 4, 138)
   );
   font-weight: bold;
 }
@@ -66,16 +67,16 @@ body {
 .imglogin {
   border-radius: 300px;
   width: 80px;
-  box-shadow: 10px 10px 5px rgb(255, 121, 121);
+  box-shadow: 10px 10px 5px rgb(253, 7, 253);
 }
 
 .title {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 30px;
   margin: 10px 0;
 }
 .p {
-  color: rgb(255, 0, 98);
+  color: rgb(253, 253, 253);
 }
 
 .card-group.remember-me {
@@ -84,7 +85,7 @@ body {
 }
 
 .card-group.remember-me a {
-  color: #ff0000; /* Cor desejada para o texto */
+  color: #ffffff; /* Cor desejada para o texto */
 }
 
 .login {
@@ -102,18 +103,19 @@ body {
   background-image: url("plano de fundo segunda tela.jpg");
 }
 
-.logo {
-  width: 150px; /* Largura da logo */
-  height: auto; /* Altura ajustável para manter a proporção da imagem */
-  display: block; /* Torna a imagem um bloco para alinhamento fácil */
-  margin: 20px auto; /* Margem superior e inferior de 20px, alinhamento central horizontal */
-  border-radius: 300px;
-  width: 150px;
-  box-shadow: 10px 10px 5px rgb(255, 132, 132);
+.banner {
+  display: flex; /* Torna a imagem um bloco para alinhamento fácil */
+  height: 225px;
+  background: linear-gradient(135deg, #8c52ff 0%, #ff914d 100%);
+  opacity: 65%;
 }
 
+.logo-img {
+  margin: 0 auto;
+  border-radius: 150px;
+}
 .content {
-  max-width: 800px; /* Largura máxima do conteúdo */
+  max-width: 800px;
   margin: 0 auto; /* Alinhamento central horizontal */
   padding: 0 20px; /* Preenchimento interno de 20px */
   color: rgb(253, 88, 76);
@@ -121,6 +123,8 @@ body {
 
 .menu {
   background-color: #ff8888; /* Cor de fundo do menu */
+  display: flex;
+  justify-content: center;
 }
 
 .menu ul {
@@ -135,42 +139,39 @@ body {
 }
 
 .menu ul li a {
-  display: block;
+  display: flex;
   color: rgb(255, 255, 255); /* Cor do texto */
   text-align: center; /* Centraliza o texto */
-  padding: 15px 200px; /* Espaçamento interno */
+  padding: 15px 100px; /* Espaçamento interno */
   text-decoration: none; /* Remove o sublinhado padrão */
 }
 
 .menu ul li a:hover {
-  background-color: #fa5e5e; /* Cor de fundo ao passar o mouse */
+  background-color: #f55d5d; /* Cor de fundo ao passar o mouse */
 }
 
 .products {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
-  flex-wrap: wrap;
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100vw;
+  margin-top: 70px;
+}
+.product:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
 
 .product {
   text-align: center;
-  width: 150px;
-  margin: 20px;
+  transition: transform 0.2s;
+  
 }
 
 .product img {
-  width: 100px;
-  height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
-}
-
-.product-image {
-  width: 200px;
-  height: auto;
-  cursor: pointer; /* Altera o cursor para indicar que a imagem é clicável */
+  height: 300px;
 }
